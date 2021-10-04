@@ -1,0 +1,21 @@
+set number relativenumber
+"set clipboard=unnamed
+set ignorecase
+
+" Save with \w and quit with \q.
+nnoremap <leader>w :write<cr>
+nnoremap <leader>q :quit<cr>
+
+" Copy/paste to system clipboard with \y and \p.
+vnoremap <leader>y "*y
+nnoremap <leader>y "*yy
+nnoremap <leader>p "*p
+
+" Comment lines with \c.
+vnoremap <leader>c <S-i>//<Esc>
+
+" Toggle nohlsearch.
+nnoremap <leader>l :nohl<CR>
+
+" Go to implementation with gi.
+nnoremap gi :vsc Edit.GoToImplementation<CR>
