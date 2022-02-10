@@ -1,5 +1,8 @@
+" Comment lines with \c. Uncomment with \u.
+nnoremap <leader>c <S-i>// <Esc>
+nnoremap <leader>u <S-i><Del><Del><Del><Esc>
+
 set number relativenumber
-"set clipboard=unnamed
 set ignorecase
 
 " Save with \w and quit with \q.
@@ -11,11 +14,12 @@ vnoremap <leader>y "*y
 nnoremap <leader>y "*yy
 nnoremap <leader>p "*p
 
-" Comment lines with \c.
-vnoremap <leader>c <S-i>//<Esc>
-
 " Toggle nohlsearch.
 nnoremap <leader>l :nohl<CR>
 
 " Go to implementation with gi.
 nnoremap gi :vsc Edit.GoToImplementation<CR>
+
+" Go 'in-and-out' with <C-i> and <C-o>.
+nnoremap <C-i> :vsc View.NavigateForward<CR>
+nnoremap <C-o> :vsc View.NavigateBackward<CR>
