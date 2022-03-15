@@ -3,7 +3,6 @@ nnoremap <leader>c <S-i>// <Esc>
 nnoremap <leader>u <S-i><Del><Del><Del><Esc>
 
 set number relativenumber
-set ignorecase
 
 " Save with \w and quit with \q.
 nnoremap <leader>w :write<cr>
