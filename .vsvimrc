@@ -3,7 +3,6 @@ nnoremap <leader>c <S-i>// <Esc>
 nnoremap <leader>u <S-i><Del><Del><Del><Esc>
 
 set number relativenumber
-set ignorecase
 
 " Save with \w and quit with \q.
 nnoremap <leader>w :write<cr>
@@ -23,3 +22,9 @@ nnoremap gi :vsc Edit.GoToImplementation<CR>
 " Go 'in-and-out' with <C-i> and <C-o>.
 nnoremap <C-i> :vsc View.NavigateForward<CR>
 nnoremap <C-o> :vsc View.NavigateBackward<CR>
+
+" Show mouse hover info box.
+nnoremap gh :vsc Edit.QuickInfo<CR>
+
+" Focus Solution Explorer.
+"nnoremap <C-S-e> :vsc View.SolutionExplorer<CR>
