@@ -1,16 +1,12 @@
-" Comment lines with \c. Uncomment with \u.
-nnoremap <leader>c <S-i>// <Esc>
-nnoremap <leader>u <S-i><Del><Del><Del><Esc>
-
 set number relativenumber
 
-" Save with \w and quit with \q.
-nnoremap <leader>w :write<cr>
-nnoremap <leader>q :quit<cr>
+" Map leader to space.
+nnoremap <SPACE> <Nop>
+let mapleader=" "
 
 " Copy/paste to system clipboard with \y and \p.
 vnoremap <leader>y "*y
-nnoremap <leader>y "*yy
+nnoremap <leader>y "*yiw
 nnoremap <leader>p "*p
 
 " Toggle nohlsearch.
@@ -25,6 +21,3 @@ nnoremap <C-o> :vsc View.NavigateBackward<CR>
 
 " Show mouse hover info box.
 nnoremap gh :vsc Edit.QuickInfo<CR>
-
-" Focus Solution Explorer.
-"nnoremap <C-S-e> :vsc View.SolutionExplorer<CR>
