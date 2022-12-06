@@ -1,19 +1,18 @@
+" Show line numbers relative to current line.
 set number relativenumber
 
 " Map leader to space.
 nnoremap <SPACE> <Nop>
 let mapleader=" "
 
-" Copy/paste to system clipboard with \y and \p.
-vnoremap <leader>y "*y
-nnoremap <leader>y "*yiw
-nnoremap <leader>p "*p
-
 " Toggle nohlsearch.
 nnoremap <leader>l :nohl<CR>
 
 " Go to implementation with gi.
 nnoremap gi :vsc Edit.GoToImplementation<CR>
+
+" Find all references with gr.
+nnoremap gr :vsc Edit.FindAllReferences<CR>
 
 " Go 'in-and-out' with <C-i> and <C-o>.
 nnoremap <C-i> :vsc View.NavigateForward<CR>
