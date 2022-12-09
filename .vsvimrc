@@ -20,3 +20,6 @@ nnoremap <C-o> :vsc View.NavigateBackward<CR>
 
 " Show mouse hover info box.
 nnoremap gh :vsc Edit.QuickInfo<CR>
+
+" Disable regular (annoying) visual paste behavior.
+vnoremap p "_dP
