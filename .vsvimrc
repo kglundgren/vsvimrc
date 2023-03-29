@@ -1,6 +1,7 @@
 " Show line numbers relative to current line.
 set number relativenumber
 
+" -- Leader --
 " Map leader to space.
 nnoremap <SPACE> <Nop>
 let mapleader=" "
@@ -8,18 +9,15 @@ let mapleader=" "
 " Toggle nohlsearch.
 nnoremap <leader>l :nohl<CR>
 
-" Go to implementation with gi.
+" -- Normal mode --
 nnoremap gi :vsc Edit.GoToImplementation<CR>
-
-" Find all references with gr.
 nnoremap gr :vsc Edit.FindAllReferences<CR>
-
-" Go 'in-and-out' with <C-i> and <C-o>.
+nnoremap gh :vsc Edit.QuickInfo<CR>
+nnoremap ]d :vsc Edit.GoToNextIssueInFile<CR>
+nnoremap [d :vsc Edit.GoToPreviousIssueInFile<CR>
 nnoremap <C-i> :vsc View.NavigateForward<CR>
 nnoremap <C-o> :vsc View.NavigateBackward<CR>
 
-" Show mouse hover info box.
-nnoremap gh :vsc Edit.QuickInfo<CR>
-
+" -- Visual mode -- 
 " Disable regular (annoying) visual paste behavior.
 vnoremap p "_dP
