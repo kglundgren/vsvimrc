@@ -10,9 +10,11 @@ let mapleader=" "
 nnoremap <leader>l :nohl<CR>
 
 " -- Normal mode --
+nnoremap gd :vsc Edit.GoToDefinition<CR>
+nnoremap gh :vsc Edit.GoToDeclaration<CR>
+nnoremap gf :vsc Edit.QuickInfo<CR>
 nnoremap gi :vsc Edit.GoToImplementation<CR>
 nnoremap gr :vsc Edit.FindAllReferences<CR>
-nnoremap gh :vsc Edit.QuickInfo<CR>
 nnoremap ]d :vsc Edit.GoToNextIssueInFile<CR>
 nnoremap [d :vsc Edit.GoToPreviousIssueInFile<CR>
 nnoremap <C-i> :vsc View.NavigateForward<CR>
